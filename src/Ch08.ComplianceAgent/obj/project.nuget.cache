@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "r/u3IMh5jb0=",
+  "success": false,
+  "projectFilePath": "C:\\Projects\\rs\\Mastering-the-Microsoft-Agent-Framework\\src\\Ch08.ComplianceAgent\\Ch08.ComplianceAgent.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1010",
+      "level": "Error",
+      "message": "The following PackageReference items do not define a corresponding PackageVersion item: ModelContextProtocol. Projects using Central Package Management must declare PackageReference and PackageVersion items with matching names. For more information, visit https://aka.ms/nuget/cpm/gettingstarted",
+      "projectPath": "C:\\Projects\\rs\\Mastering-the-Microsoft-Agent-Framework\\src\\Ch08.ComplianceAgent\\Ch08.ComplianceAgent.csproj",
+      "filePath": "C:\\Projects\\rs\\Mastering-the-Microsoft-Agent-Framework\\src\\Ch08.ComplianceAgent\\Ch08.ComplianceAgent.csproj",
+      "targetGraphs": []
+    }
+  ]
+}

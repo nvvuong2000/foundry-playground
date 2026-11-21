@@ -1,0 +1,216 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Projects\\rs\\Mastering-the-Microsoft-Agent-Framework\\src\\Ch03.ProvidersAndIdentity\\Ch03.ProvidersAndIdentity.csproj": {}
+  },
+  "projects": {
+    "C:\\Projects\\rs\\Mastering-the-Microsoft-Agent-Framework\\src\\Ch03.ProvidersAndIdentity\\Ch03.ProvidersAndIdentity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\rs\\Mastering-the-Microsoft-Agent-Framework\\src\\Ch03.ProvidersAndIdentity\\Ch03.ProvidersAndIdentity.csproj",
+        "projectName": "Ch03.ProvidersAndIdentity",
+        "projectPath": "C:\\Projects\\rs\\Mastering-the-Microsoft-Agent-Framework\\src\\Ch03.ProvidersAndIdentity\\Ch03.ProvidersAndIdentity.csproj",
+        "packagesPath": "C:\\Users\\VuongNguyenVan\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\rs\\Mastering-the-Microsoft-Agent-Framework\\src\\Ch03.ProvidersAndIdentity\\obj\\",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\VuongNguyenVan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Projects\\rs\\Mastering-the-Microsoft-Agent-Framework\\src\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Projects\\rs\\Mastering-the-Microsoft-Agent-Framework\\src\\Shared\\Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "centralPackageVersions": {
+            "Azure.AI.OpenAI": "2.1.0",
+            "Azure.AI.Projects": "3.0.0",
+            "Azure.Identity": "1.21.0",
+            "Microsoft.Agents.AI": "1.28.0",
+            "Microsoft.Agents.AI.Abstractions": "1.28.0",
+            "Microsoft.Agents.AI.Foundry": "1.28.0-preview.261106.1",
+            "Microsoft.Agents.AI.OpenAI": "1.28.0",
+            "Microsoft.Extensions.AI": "11.0.1",
+            "Microsoft.Extensions.AI.OpenAI": "11.0.1",
+            "Microsoft.Extensions.Configuration": "8.0.0",
+            "Microsoft.Extensions.Configuration.EnvironmentVariables": "8.0.0",
+            "Microsoft.Extensions.VectorData.Abstractions": "11.0.1",
+            "Microsoft.SemanticKernel.Connectors.InMemory": "1.74.0-preview"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.427/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\rs\\Mastering-the-Microsoft-Agent-Framework\\src\\Shared\\Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\rs\\Mastering-the-Microsoft-Agent-Framework\\src\\Shared\\Shared.csproj",
+        "projectName": "Shared",
+        "projectPath": "C:\\Projects\\rs\\Mastering-the-Microsoft-Agent-Framework\\src\\Shared\\Shared.csproj",
+        "packagesPath": "C:\\Users\\VuongNguyenVan\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\rs\\Mastering-the-Microsoft-Agent-Framework\\src\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\VuongNguyenVan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Azure.AI.OpenAI": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Azure.AI.Projects": {
+              "target": "Package",
+              "version": "[3.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Azure.Identity": {
+              "target": "Package",
+              "version": "[1.21.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.Agents.AI": {
+              "target": "Package",
+              "version": "[1.28.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.Agents.AI.Foundry": {
+              "target": "Package",
+              "version": "[1.28.0-preview.261106.1, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.Agents.AI.OpenAI": {
+              "target": "Package",
+              "version": "[1.28.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
+              "target": "Package",
+              "version": "[8.0.0, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "Azure.AI.OpenAI": "2.1.0",
+            "Azure.AI.Projects": "3.0.0",
+            "Azure.Identity": "1.21.0",
+            "Microsoft.Agents.AI": "1.28.0",
+            "Microsoft.Agents.AI.Abstractions": "1.28.0",
+            "Microsoft.Agents.AI.Foundry": "1.28.0-preview.261106.1",
+            "Microsoft.Agents.AI.OpenAI": "1.28.0",
+            "Microsoft.Extensions.AI": "11.0.1",
+            "Microsoft.Extensions.AI.OpenAI": "11.0.1",
+            "Microsoft.Extensions.Configuration": "8.0.0",
+            "Microsoft.Extensions.Configuration.EnvironmentVariables": "8.0.0",
+            "Microsoft.Extensions.VectorData.Abstractions": "11.0.1",
+            "Microsoft.SemanticKernel.Connectors.InMemory": "1.74.0-preview"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.427/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
