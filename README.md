@@ -7,7 +7,7 @@ file it came from is in this repository and it builds.
 
 ## What you need
 
-- The .NET 8 SDK. The exact version is pinned in `global.json`.
+- The .NET 10 SDK. The exact version is pinned in `global.json`.
 - An Azure AI Foundry project with a deployed chat model. Chapter 2 walks through
   deploying one. Chapter 6 additionally needs a deployed embedding model.
 - The Azure CLI, signed in with `az login`. The code authenticates with your CLI
