@@ -16,6 +16,7 @@
     <PackageVersion Include="Microsoft.Extensions.VectorData.Abstractions" Version="11.0.1" />
     <PackageVersion Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
     <PackageVersion Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="8.0.0" />
-    <PackageVersion Include="Microsoft.SemanticKernel.Connectors.InMemory" Version="1.74.0-preview" />
+    <!-- Microsoft.SemanticKernel.Connectors.InMemory 1.74.0-preview is deprecated and incompatible with VectorData 11 (missing VectorSearchFilter). -->
+    <PackageVersion Include="CommunityToolkit.VectorData.InMemory" Version="1.0.1" />
   </ItemGroup>
 </Project>

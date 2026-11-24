@@ -17,7 +17,7 @@
     <PackageReference Include="Microsoft.Extensions.AI" />
     <PackageReference Include="Microsoft.Extensions.AI.OpenAI" />
     <PackageReference Include="Microsoft.Extensions.VectorData.Abstractions" />
-    <PackageReference Include="Microsoft.SemanticKernel.Connectors.InMemory" />
+    <PackageReference Include="CommunityToolkit.VectorData.InMemory" />
   </ItemGroup>
 
 </Project>
