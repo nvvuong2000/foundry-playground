@@ -26,13 +26,13 @@ public static class AgentClientFactory
         return azureClient.GetChatClient(deployment).AsIChatClient();
     }
 
-    public static AIAgent CreateFoundryProjectAgent(string instructions, string name)
+    public static AIAgent CreateFoundryProjectAgent(string instructions, string name, IList<AITool>? tools = null)
     {
         string projectEndpoint = GetRequiredEnvironmentVariable("AZURE_AI_PROJECT_ENDPOINT");
         string deploymentName = GetRequiredEnvironmentVariable("AZURE_AI_MODEL_DEPLOYMENT_NAME");
 
         AIAgent agent = new AIProjectClient(new Uri(projectEndpoint), new AzureCliCredential())
-            .AsAIAgent(model: deploymentName, instructions: instructions, name: name);
+            .AsAIAgent(model: deploymentName, instructions: instructions, name: name, tools: tools);
 
         return agent;
     }
