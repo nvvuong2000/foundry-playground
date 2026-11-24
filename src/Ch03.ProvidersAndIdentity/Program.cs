@@ -1,3 +1,4 @@
+using MasteringAgentFramework.Ch03.ProvidersAndIdentity;
 using MasteringAgentFramework.Shared;
 using Microsoft.Agents.AI;
 
@@ -18,3 +19,6 @@ AgentResponse response = await agent.RunAsync(
 
 Console.WriteLine("Foundry project path");
 Console.WriteLine(response.Text);
+
+// Ví dụ bổ sung: các loại event khác (xem EventExamples.cs)
+await EventExamples.RunAllAsync();
