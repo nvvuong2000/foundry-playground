@@ -1,3 +1,4 @@
+using System.ClientModel;
 using Azure.AI.OpenAI;
 using Azure.AI.Projects;
 using Azure.Identity;
@@ -14,9 +15,14 @@ public static class AgentClientFactory
         string endpoint = NormalizeAzureOpenAIEndpoint(GetRequiredEnvironmentVariable("AZURE_OPENAI_ENDPOINT"));
         string deployment = GetRequiredEnvironmentVariable("AZURE_OPENAI_DEPLOYMENT");
 
-        AzureCliCredential credential = new();
         AzureOpenAIClientOptions options = new(AzureOpenAIClientOptions.ServiceVersion.V2024_10_21);
-        AzureOpenAIClient azureClient = new(new Uri(endpoint), credential, options);
+
+        // Dev-only shortcut: when AZURE_OPENAI_API_KEY is set, skip Entra ID (and its MFA prompt).
+        // Production should keep using managed identity / AzureCliCredential.
+        string? apiKey = Environment.GetEnvironmentVariable("AZURE_OPENAI_API_KEY");
+        AzureOpenAIClient azureClient = string.IsNullOrWhiteSpace(apiKey)
+            ? new(new Uri(endpoint), new AzureCliCredential(), options)
+            : new(new Uri(endpoint), new ApiKeyCredential(apiKey), options);
         return azureClient.GetChatClient(deployment).AsIChatClient();
     }
 
